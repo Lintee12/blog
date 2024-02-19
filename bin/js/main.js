@@ -9,7 +9,7 @@ function getSlug(postTitle) {
 
 function createPostPreview(postTitle, postImage, postAuthor, postDate) {
   const element = document.createElement("a");
-  element.href = `/blog/posts/${getSlug(postTitle)}/post.html`;
+  element.href = `/posts/${getSlug(postTitle)}/post.html`;
   element.classList.add("post-preview");
   element.classList.add("scroll-fade");
   element.classList.add("material");
@@ -25,7 +25,7 @@ function createPostPreview(postTitle, postImage, postAuthor, postDate) {
 
 async function loadPosts() {
   let posts;
-  await fetch("../posts/posts.json")
+  await fetch("/posts/posts.json")
     .then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
