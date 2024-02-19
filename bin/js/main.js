@@ -9,7 +9,7 @@ function getSlug(postTitle) {
 
 function createPostPreview(postTitle, postImage, postAuthor, postDate) {
   const element = document.createElement("a");
-  element.href = `/posts/${getSlug(postTitle)}/post.html`;
+  element.href = `./posts/${getSlug(postTitle)}/post.html`;
   element.classList.add("post-preview");
   element.classList.add("scroll-fade");
   element.classList.add("material");
