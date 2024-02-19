@@ -25,7 +25,7 @@ function createPostPreview(postTitle, postImage, postAuthor, postDate) {
 
 async function loadPosts() {
   let posts;
-  await fetch("/posts/posts.json")
+  await fetch("/blog/posts/posts.json")
     .then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
