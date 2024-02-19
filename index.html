@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Evans Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./bin/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./bin/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./bin/css/header.css" />
+    <style>
+      @-webkit-keyframes rotating {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      .rotating {
+        -webkit-animation: rotating 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="header-title" title="Go to start" href="./index.html"
+        >My Blog</a
+      >
+      <a
+        class="header-link"
+        href="https://lintee12.github.io/#contact"
+        target="_blank"
+        >Contact</a
+      >
+    </header>
+    <main>
+      <div class="main-container_column material">
+        <h2>My Posts</h2>
+        <h3 class="post-tag material" title="Recently edited or created">
+          Recent
+        </h3>
+        <div class="container-posts post-loader" data-type="new">
+          <div class="rotating loading-preview">
+            <img
+              style="margin-top: 20px"
+              width="32px"
+              height="32px"
+              alt="loading"
+              src="https://i.gifer.com/ZZ5H.gif"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./bin/js/main.js"></script>
+  </body>
+</html>

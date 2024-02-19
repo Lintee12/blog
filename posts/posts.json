@@ -1,0 +1,26 @@
+{
+  "0": {
+    "title": "First Post!!!",
+    "image": "https://images7.alphacoders.com/133/1330715.png",
+    "author": "Evan Linton",
+    "date": "02/19/2024"
+  },
+  "1": {
+    "title": "Second Post!!!",
+    "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1060&t=st=1708354952~exp=1708355552~hmac=d357cbd95012724588b2fb7e9a4ef8c5d92526e2b55ac96df11ae25dda2a7a79",
+    "author": "Evan Linton",
+    "date": "02/19/2024"
+  },
+  "2": {
+    "title": "Third Post!!!",
+    "image": "https://img.freepik.com/free-photo/beautiful-landscape-mountain-fuji_74190-3065.jpg?t=st=1708285648~exp=1708286248~hmac=a2061092cd50f53153de0141ac076b9d58f4f9072c34566c34a9a9dbe1c9fd40",
+    "author": "Evan Linton",
+    "date": "02/19/2024"
+  },
+  "3": {
+    "title": "Blank Post",
+    "image": "https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg",
+    "author": "Evan Linton",
+    "date": "02/19/2024"
+  }
+}
