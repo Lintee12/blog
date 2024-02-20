@@ -7,6 +7,9 @@ function getSlug(postTitle) {
     .replace(" ", "-");
 }
 
+const windowLocation = window.location;
+console.log(windowLocation);
+
 function createPostPreview(postTitle, postImage, postAuthor, postDate) {
   const element = document.createElement("a");
   element.href = `./posts/${getSlug(postTitle)}/post.html`;
@@ -24,8 +27,14 @@ function createPostPreview(postTitle, postImage, postAuthor, postDate) {
 }
 
 async function loadPosts() {
+  let location;
+  if (windowLocation.host === "lintee12.github.io") {
+    location = "/blog/posts/posts.json";
+  } else {
+    location = "/posts/posts.json";
+  }
   let posts;
-  await fetch("/blog/posts/posts.json")
+  await fetch(location)
     .then((res) => {
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);

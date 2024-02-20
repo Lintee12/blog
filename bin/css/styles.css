@@ -7,7 +7,6 @@ main {
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
 }
 
 h2 {
@@ -55,6 +54,16 @@ h3 {
   }
 }
 
+@media all and (max-width: 500px) {
+  main {
+    padding: 0;
+  }
+
+  .main-container_column {
+    border-radius: 0 !important;
+  }
+}
+
 .post-preview {
   background-color: white;
   flex-shrink: 1;
@@ -65,6 +74,7 @@ h3 {
   aspect-ratio: 4/2.5;
   transition: box-shadow 0.2s;
   padding: 10px;
+  gap: 5px;
 }
 
 .post-preview:hover {
@@ -79,13 +89,12 @@ h3 {
 
 .post-preview_title {
   font-size: 1.6rem;
+  margin-bottom: -5px;
 }
 
 .post-preview_author {
   height: fit-content;
   line-height: 1rem;
-  margin-top: -5px;
-  margin-bottom: 5px;
 }
 
 .post-preview_author::before {
@@ -96,7 +105,6 @@ h3 {
   color: rgb(73, 72, 72);
   height: fit-content;
   line-height: 1rem;
-  margin-bottom: -2px;
 }
 
 .post-preview_date::before {
@@ -112,4 +120,18 @@ h3 {
   padding-bottom: 7.3px;
   width: fit-content;
   line-height: 1.3rem;
+}
+
+/* ARTICLE */
+
+article {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article p {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
